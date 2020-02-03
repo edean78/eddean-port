@@ -1,0 +1,19 @@
+{
+  "name": "eddean-port",
+  "version": "1.0.0",
+  "description": "This application serves as the portfolio for Ed Dean",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edean78/eddean-port.git"
+  },
+  "author": "Ed Dean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edean78/eddean-port/issues"
+  },
+  "homepage": "https://github.com/edean78/eddean-port#readme"
+}
