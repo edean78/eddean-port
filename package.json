@@ -4,7 +4,14 @@
   "description": "This application serves as the portfolio for Ed Dean",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "postinstall": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build",
+    "seed": "node scripts/seedDB.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/edean78/eddean-port/issues"
   },
-  "homepage": "https://github.com/edean78/eddean-port#readme"
+  "homepage": "https://github.com/edean78/eddean-port#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
+  }
 }
