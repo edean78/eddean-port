@@ -1,7 +1,8 @@
 import React from 'react';
+import HomeNav from '../HomeNav/HomeNav';
 import './Header.css';
 
-function Header({ children }) {
+function Header() {
     return (
         <header class="page-header">
             <div class="container">
@@ -9,6 +10,7 @@ function Header({ children }) {
                     <img src="https://live.staticflickr.com/65535/49484113731_83e716da30.jpg" alt="profilepic"></img>
                         <h4>Edward E. Dean III</h4>
                 </div>
+                <HomeNav />
             </div>
         </header>
     );   
