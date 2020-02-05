@@ -1,11 +1,21 @@
 img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    padding: 5px;
+    /* padding: 5px; */
+    text-align: center;
 }
 
-.page-header {
-    width: 100%;
+.jumbotron {
     text-align: center;
+    /* height: auto; */
+    background-color: #375a7f;
+}
+
+h1 {
+    font-style: italic;
+}
+
+p {
+    font-size: medium;
 }

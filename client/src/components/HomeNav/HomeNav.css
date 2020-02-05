@@ -1,10 +1,20 @@
 nav.nav-center ul {
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 nav.nav-center ul li {
     display: inline;
-    float: none;
+    margin: 0;
+    padding: 0;
 }
 nav.nav-center ul li a {
     display: inline-block;
+    font-size: large;
+    /* margin: 0;
+    padding: 0; */
+}
+
+a:hover {
+    color: white;
 }

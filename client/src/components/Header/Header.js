@@ -4,17 +4,15 @@ import './Header.css';
 
 function Header() {
     return (
-        <header class="page-header">
-            <div class="container">
-                <div class="row">
-                    <img src="https://live.staticflickr.com/65535/49484113731_83e716da30.jpg" alt="profilepic"></img>
-                        <h4>Edward E. Dean III</h4>
-                </div>
+        <div className="jumbotron" id="jumboHeader">
+            <div className="container">
+                <img src="https://live.staticflickr.com/65535/49484113731_83e716da30.jpg" alt="profilepic"></img>
+                <h1 className="Name">Edward Dean</h1>
+                <p className="title">GIS Professional/Aspiring Web Developer</p>
                 <HomeNav />
             </div>
-        </header>
-    );   
+        </div>
+    );
 }
-                
-export default Header;
 
+export default Header;

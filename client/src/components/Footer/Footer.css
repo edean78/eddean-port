@@ -1,9 +1,15 @@
-.fab{
+.fab {
     padding: 5px;
     cursor: pointer;
+    font-size: 24px;
+    color: white;
 }
 
 .page-footer {
     /* background-color: #025a9d; */
     text-align: center;
 }
+
+/* .media-icons {
+    text-align: center;
+} */
