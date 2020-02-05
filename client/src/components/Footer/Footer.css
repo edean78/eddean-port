@@ -7,9 +7,12 @@
 
 .page-footer {
     /* background-color: #025a9d; */
-    text-align: center;
+    /* text-align: center; */
+    position: fixed;
+    bottom: 0;
+    height: 50px;
 }
 
-/* .media-icons {
+a {
     text-align: center;
-} */
+}
