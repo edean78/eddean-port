@@ -9,7 +9,6 @@ import API from '../utils/API';
 class Portfolio extends Component {
     constructor(props){
         super(props);
-        this.deleteSoap = this.deleteSoap.bind(this)
         
         this.state = {
             title: "",
@@ -57,7 +56,6 @@ class Portfolio extends Component {
                         ))}
                     </div>
                 </div>
-                
                 <Footer />
             </div>
         )

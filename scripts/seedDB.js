@@ -206,7 +206,7 @@ const projectSeed = [
     },      
 ]
 
-db.project
+db.Project
     .remove({})
     .then(() => db.project.collection.insertMany(projectSeed))
     .then(data => {
