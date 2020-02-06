@@ -18,7 +18,8 @@ Right the app will only run locally. If you want clone the repo, run npm install
 
 # Author
 ### Ed Dean
-[github repo:](https://github.com/edean78/eddean-port)
+Click [github repo:](https://github.com/edean78/eddean-port) to get the code.
+
 [Heroku](https://eddean-portfolio.herokuapp.com/) This link is not currently working
 
 # Issues
