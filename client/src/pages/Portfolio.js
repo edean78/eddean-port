@@ -7,10 +7,20 @@ import API from '../utils/API';
 
 
 class Portfolio extends Component {
-    constructor(props) {
+    constructor(props){
         super(props);
-
-
+        this.deleteSoap = this.deleteSoap.bind(this)
+        
+        this.state = {
+            title: "",
+            image: "",
+            desc: "",
+            github: "",
+            products: [],
+            key: ""
+        }
+        
+        this.componentDidMount = this.componentDidMount.bind(this)
     }
 
     componentDidMount() {
@@ -35,13 +45,14 @@ class Portfolio extends Component {
                 <Navbar />
                 <div className="container">
                     <div className="row">
-                        {this.state.projects.map(product => (
+                        {this.state.projects.map(project => (
                             <ProjectCard 
-                                id={product._id}
-                                title={product.title}
-                                image={product.image}
-                                desc={product.desc}
-                                github={product.github}
+                                id={project._id}
+                                key={project.id}
+                                title={project.title}
+                                image={project.image}
+                                desc={project.desc}
+                                github={project.github}
                             />  
                         ))}
                     </div>
