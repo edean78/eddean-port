@@ -22,8 +22,8 @@ function Navbar() {
                     </li>
                     <li class="nav-item">
                         <Link
-                            to="/contact_us"
-                            className={window.location.pathname === "/about_us" ? "nav-link active" : "nav-link"}>
+                            to="/contact_me"
+                            className={window.location.pathname === "/contact_me" ? "nav-link active" : "nav-link"}>
                             Contact Us
                          </Link>
                     </li>

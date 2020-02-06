@@ -11,7 +11,7 @@ function ProjectCard({props}) {
             <div class="card-body">
                 <h4 class="card-title">{props.title}</h4>
                 <p class="card-text">{props.desc}</p>
-                <a href={props.github} title="Github-Profile" id={props.id} target="_blank"><i className="fab fa-github"></i></a>
+                <a href={props.github} title="Github-Profile" id={props.id} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
             </div>
         </div>
     );
