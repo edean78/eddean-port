@@ -27,6 +27,11 @@ const projectSchema = new Schema({
         required: true,
         trim: true
     },
+    type: {
+        type: String,
+        required:true,
+        trim: true
+    },
     github: {
         type: String,
         required: true,
