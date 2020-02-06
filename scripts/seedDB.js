@@ -1,4 +1,11 @@
-[
+require('dotenv').config()
+const mongoose = require('mongoose');
+const db = require('../models');
+
+console.log(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI)
+
+const projectSeed = [
     { 
         week: "1", 
         title: "Basic-Portfolio", 
@@ -40,7 +47,7 @@
         title: "Cyrstal Collector Game", 
         url: "https://edean78.github.io/unit-4-game/", 
         image: "https://media.giphy.com/media/BHmvTeUcIGg7u/giphy.gif", 
-        desc: "When this game starts the computer will choose a random number. There are four crystals that represent four different random values. When the player clicks on a crystal the values are added together. The object of the game is to add up the value of the crystal to equal the computer's random value.", 
+        desc: "The object of the game is to add up the value of the crystal to equal the computer's random value.", 
         type: "homework", 
         github: "https://github.com/edean78/Psychic-Game" 
     },
@@ -49,7 +56,7 @@
         title: "Trivia Game", 
         url: "https://edean78.github.io/TriviaGame/", 
         image: "https://media.giphy.com/media/LSvJgbabGcdZ5pmO94/giphy.gif", 
-        desc: "This UGA trivia game uses time intervals to give the player 30 seconds to answer each question. After each question, a message will display along with a gif letting the player know if the question was ansered correctly or not.", 
+        desc: "This UGA trivia game uses time intervals to give the player 30 seconds to answer each question.", 
         type: "homework", 
         github: "https://github.com/edean78/TriviaGame" 
     },
@@ -75,13 +82,17 @@
         week: "8", 
         title: "In the Loop", 
         url: "https://edean78.github.io/Project-1-Group-4/", 
-        image: "https://i0.wp.com/spacetourismguide.com/wp-content/uploads/2019/01/Stargazing-in-Atlanta-Featured.jpg?zoom=1.25&fit=862%2C575&ssl=1", desc: "The In the Loop project allows a user to input a event in Atlanta and receive weather, location, and ticket prices for the event. We use ajax calls to receive weather and event information.", type: "project", github: "https://github.com/edean78/Project-1-Group-4" },
+        image: "https://i0.wp.com/spacetourismguide.com/wp-content/uploads/2019/01/Stargazing-in-Atlanta-Featured.jpg?zoom=1.25&fit=862%2C575&ssl=1", 
+        desc: "The In the Loop project allows a user to input a event in Atlanta and receive weather, location, and ticket prices for the event.", 
+        type: "project", 
+        github: "https://github.com/edean78/Project-1-Group-4" 
+    },
     { 
         week: "9", 
         title: "LIRI Bot", 
         url: "", 
         image: "", 
-        desc: "LIRI Bot is like iPhone's Siri. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that take in parameteters and give you back data.", 
+        desc: "LIRI Bot is like iPhone's Siri. LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that take in parameteters and give you back data.", 
         type: "homework", 
         github: "https://github.com/edean78/liri-node-app"
     },
@@ -108,7 +119,7 @@
         title: "Friend Finder", 
         url: "https://vast-springs-19218.herokuapp.com/", 
         image: "https://unsplash.com/@miinyuii?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge", 
-        desc: "This application is basically a dating app. This full-stack site will take in results from your users survey, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.",
+        desc: "This application is basically a dating app. Based on a survey taken the app compare with other users and pick the best match",
         type: "homework",
         github: "https://github.com/edean78/FriendFinder"
     },
@@ -126,7 +137,7 @@
         title: "Santa's Little Helper", 
         url: "https://dry-shelf-70211.herokuapp.com/", 
         image: "https://unsplash.com/@jeshoots?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge", 
-        desc: "This application allows users to create a user account, create a list of wanted items, list the items in the wishlist, and search others wishlist", 
+        desc: "This application allows users to create a user account, create a Christmas list, list the items in the wishlist, and search others wishlist", 
         type: "project", 
         github: "https://github.com/edean78/Project-2"
     },
@@ -169,7 +180,7 @@
     {
         week: "19", 
         title: "Regionalized", 
-        url: "", 
+        url: "https://eddean-portfolio.herokuapp.com/", 
         image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
         desc: "", 
         type: "homework", 
@@ -178,7 +189,7 @@
     {
         week: "20", 
         title: "React Porfolio", 
-        url: "", 
+        url: "https://eddean-portfolio.herokuapp.com/", 
         image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
         desc: "This application display all my homework and project completed during my Gt Bootcamp", 
         type: "homework", 
@@ -187,10 +198,21 @@
     {
         week: "21", 
         title: "Browning's Soap", 
-        url: "", 
+        url: "https://brownings-soap.herokuapp.com/", 
         image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
-        desc: "", 
+        desc: "This applicaiton is a store front for a local family soap business", 
         type: "Project", 
         github: "https://github.com/mchiang62/soap-app"
     },      
 ]
+
+db.project
+    .remove({})
+    .then(() => db.project.collection.insertMany(projectSeed))
+    .then(data => {
+        console.log(data.result.n + " records inserted into Project");
+    })
+    .catch(err => {
+        console.log(err);
+        process.exit(1);
+    });
