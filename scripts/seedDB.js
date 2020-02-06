@@ -144,41 +144,41 @@ const projectSeed = [
     {
         week: "17", 
         title: "Updated Portfolio", 
-        url: "", 
+        url: "https://eddean-portfolio.herokuapp.com/", 
         image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
         desc: "Updated Portfolio", 
         type: "homework", 
         github: "https://github.com/edean78/eddean-port"
     },
     {
-        week: "17", 
+        week: "18", 
         title: "Bulldawg News Scrap", 
-        url: "", 
+        url: "https://eddean-portfolio.herokuapp.com/", 
         image: "https://media.giphy.com/media/3o7aD89FPd17gtklC8/giphy.gif", 
         desc: "This application lets the user view and leave comments on the latest Georgia Bulldogs news scraped from another website.", 
         type: "homework", 
         github: "https://github.com/edean78/BulldawgNews-Scrap"
     },
     {
-        week: "18", 
+        week: "19", 
         title: "Clicky Game", 
-        url: "", 
+        url: "https://eddean-portfolio.herokuapp.com/", 
         image: "https://media.giphy.com/media/XBdaS9VD83Pk63s5DM/giphy.gif", 
         desc: "This application required the UI to be broken into components, managed component state, and response to user events.", 
         type: "homework", 
         github: "https://github.com/edean78/clicky-game"
     },
     {
-        week: "18", 
+        week: "20", 
         title: "Google Book Search", 
-        url: "", 
+        url: "https://eddean-portfolio.herokuapp.com/", 
         image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
         desc: "This React app is composed fo components, work with helper/util functions, and utilize React lifecycle mthods to query and display book based on user searches.", 
         type: "homework", 
         github: "https://github.com/edean78/eddean-port"
     },
     {
-        week: "19", 
+        week: "21", 
         title: "Regionalized", 
         url: "https://eddean-portfolio.herokuapp.com/", 
         image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
@@ -187,7 +187,7 @@ const projectSeed = [
         github: "https://github.com/edean78/eddean-port"
     },
     {
-        week: "20", 
+        week: "22", 
         title: "React Porfolio", 
         url: "https://eddean-portfolio.herokuapp.com/", 
         image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
@@ -196,7 +196,7 @@ const projectSeed = [
         github: "https://github.com/edean78/eddean-port"
     },
     {
-        week: "21", 
+        week: "23", 
         title: "Browning's Soap", 
         url: "https://brownings-soap.herokuapp.com/", 
         image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
