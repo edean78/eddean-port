@@ -15,8 +15,8 @@ function Navbar() {
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <Link to="/"
-                            className={window.location.pathname === "/" || window.location.pathname === "/home" ? "nav-link active" : "nav-link"}>
+                        <Link to="/home"
+                            className={window.location.pathname === "/home" || window.location.pathname === "/home" ? "nav-link active" : "nav-link"}>
                             Home
                          </Link>
                     </li>
