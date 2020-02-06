@@ -134,10 +134,10 @@
         week: "17", 
         title: "Updated Portfolio", 
         url: "", 
-        image: "", 
-        desc: "", 
+        image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
+        desc: "Updated Portfolio", 
         type: "homework", 
-        github: ""
+        github: "https://github.com/edean78/eddean-port"
     },
     {
         week: "17", 
