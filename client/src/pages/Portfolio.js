@@ -16,7 +16,7 @@ class Portfolio extends Component {
             image: "",
             desc: "",
             github: "",
-            products: [],
+            projects: [],
             key: ""
         }
         
