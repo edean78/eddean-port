@@ -29,6 +29,12 @@ mongoose.connect(MONGODB_URI, {
     useFindAndModify: false
 });
 
+// Send every other request to the React app
+//  Define any API routes before this runs
+app.get("*", (req, res) => {
+    res.sendFile(pathjoin(__dirname, "./eddean-port/buil/index.html"));
+});
+
 // Start the API server
 app.listen(PORT, () => {
     console.log(`API server now listening on PORT ${PORT}!`);
