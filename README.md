@@ -11,7 +11,7 @@ Hi, and thank you for visiting my website. This site displays information about 
 
 
 # A quick look
-<iframe src="https://drive.google.com/file/d/1XTwhVrrROf2Yh63LASSrDfPOui7zZ0ti/preview" width="640" height="480"></iframe>
+Click [here](https://drive.google.com/file/d/1XTwhVrrROf2Yh63LASSrDfPOui7zZ0ti/preview) to see the app in action.
 
 # Running this App
 Right the app will only run locally. If you want clone the repo, run npm install, then npm start. Once I correct the issues (see below) that I am having, I will update this section.
