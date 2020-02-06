@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const db = require('../models');
 
 console.log(process.env.MONGODB_URI)
-// mongoose.connect(process.env.MONGODB_URI);
-mongoose.connect('mongodb://localhost/portfolio');
+mongoose.connect(process.env.MONGODB_URI);
 
 const projectSeed = [
     { 
