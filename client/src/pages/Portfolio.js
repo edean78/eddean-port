@@ -92,7 +92,7 @@ const projects = [
         week: "9", 
         title: "LIRI Bot", 
         url: "", 
-        image: "", 
+        image: "https://media.giphy.com/media/vd8bWznL362DC/giphy.gif", 
         desc: "LIRI Bot is like iPhone's Siri. LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that take in parameteters and give you back data.", 
         type: "homework", 
         github: "https://github.com/edean78/liri-node-app"
@@ -101,7 +101,7 @@ const projects = [
         week: "10", 
         title: "Constructor Word Guess", 
         url: "", 
-        image: "https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/gt-atl-fsf-pt-08-2019-u-c/raw/master/01-Class-Content/11-js-constructors/02-Homework/Instructions/Images/01-WordGuess-Cli.gif", 
+        image: "https://media.giphy.com/media/VGVwLultLZjrrssAak/giphy.gif", 
         desc: "Word Guess command-line using constructor functions", 
         type: "homework", 
         github: "https://github.com/edean78/Con-Word-Guess"
@@ -110,7 +110,7 @@ const projects = [
         week: "11", 
         title: "Bamazon", 
         url: "", 
-        image: "", 
+        image: "https://media.giphy.com/media/asI6WBJXOn30I/giphy.gif", 
         desc: "A Amazon-like storefront application using MySQL. The application will take in orders from customers and deplete stock from the store's inventory.", 
         type: "homework", 
         github: "https://github.com/edean78/bamazon"
@@ -119,7 +119,7 @@ const projects = [
         week: "12",
         title: "Friend Finder", 
         url: "https://vast-springs-19218.herokuapp.com/", 
-        image: "https://unsplash.com/@miinyuii?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge", 
+        image: "https://media.giphy.com/media/3ohzdPM43X326fUNnW/giphy.gif", 
         desc: "This application is basically a dating app. Based on a survey taken the app compare with other users and pick the best match",
         type: "homework",
         github: "https://github.com/edean78/FriendFinder"
@@ -137,7 +137,7 @@ const projects = [
         week: "14", 
         title: "Santa's Little Helper", 
         url: "https://dry-shelf-70211.herokuapp.com/", 
-        image: "https://unsplash.com/@jeshoots?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge", 
+        image: "https://media.giphy.com/media/3otPor91nTSiGXnX3y/giphy.gif", 
         desc: "This application allows users to create a user account, create a Christmas list, list the items in the wishlist, and search others wishlist", 
         type: "project", 
         github: "https://github.com/edean78/Project-2"
@@ -146,7 +146,7 @@ const projects = [
         week: "17", 
         title: "Updated Portfolio", 
         url: "https://eddean-portfolio.herokuapp.com/", 
-        image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
+        image: "https://media.giphy.com/media/9JrkkDoJuU0FbdbUZU/giphy.gif", 
         desc: "Updated Portfolio", 
         type: "homework", 
         github: "https://github.com/edean78/eddean-port"
@@ -191,7 +191,7 @@ const projects = [
         week: "22", 
         title: "React Porfolio", 
         url: "https://eddean-portfolio.herokuapp.com/", 
-        image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
+        image: "https://media.giphy.com/media/9JrkkDoJuU0FbdbUZU/giphy.gif", 
         desc: "This application display all my homework and project completed during my Gt Bootcamp", 
         type: "homework", 
         github: "https://github.com/edean78/eddean-port"
@@ -200,7 +200,7 @@ const projects = [
         week: "23", 
         title: "Browning's Soap", 
         url: "https://brownings-soap.herokuapp.com/", 
-        image: "https://media.giphy.com/media/TK4yMeRswlKWA/giphy.gif", 
+        image: "https://media.giphy.com/media/xT9IghbLWFHonTVfLq/giphy.gif", 
         desc: "This applicaiton is a store front for a local family soap business", 
         type: "Project", 
         github: "https://github.com/mchiang62/soap-app"

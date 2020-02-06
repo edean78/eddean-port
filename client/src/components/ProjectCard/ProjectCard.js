@@ -5,10 +5,10 @@ function ProjectCard({projects}) {
     console.log(projects)
 
     const projectsList = projects.map( project => (
-        <div class="card border-info m-auto col-md-3" id="project-card">
-            <div className="img-container" id="project-image">
+        <div class="card border-info col-md-3 d-flex align-items-stretch" id="project-card">
+            <div className="img-container">
                 <a href={project.url}>
-                <img alt={project.title} src={project.image}/>
+                <img className="project-image" alt={project.title} src={project.image}/>
                 </a>
             </div>
 
