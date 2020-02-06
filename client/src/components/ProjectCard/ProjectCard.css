@@ -1,6 +1,6 @@
 .project-image {
-    width: 200px !important; 
-    height: 175px !important;
+    width: 200px; 
+    height: 175px;
     text-align: center;
     border-radius: 0%; 
     margin: 5px;
@@ -9,5 +9,5 @@
 #project-card {
     height: auto;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin: 10px;
 }
