@@ -32,7 +32,7 @@ mongoose.connect(MONGODB_URI, {
 // Send every other request to the React app
 //  Define any API routes before this runs
 app.get("*", (req, res) => {
-    res.sendFile(pathjoin(__dirname, "./eddean-port/buil/index.html"));
+    res.sendFile(pathjoin(__dirname, "./eddean-port/build/index.html"));
 });
 
 // Start the API server
