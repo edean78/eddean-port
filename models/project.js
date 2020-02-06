@@ -27,7 +27,7 @@ const projectSchema = new Schema({
         required: true,
         trim: true
     },
-    repoURL: {
+    github: {
         type: String,
         required: true,
         trim: true

@@ -13,6 +13,7 @@ class Portfolio extends Component {
         this.state = {
             title: "",
             image: "",
+            url: "",
             desc: "",
             github: "",
             projects: [],

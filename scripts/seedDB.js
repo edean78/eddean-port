@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const db = require('../models');
 
 console.log(process.env.MONGODB_URI)
-mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect('mongodb://localhost/portfolio');
 
 const projectSeed = [
     { 
@@ -203,10 +204,10 @@ const projectSeed = [
         desc: "This applicaiton is a store front for a local family soap business", 
         type: "Project", 
         github: "https://github.com/mchiang62/soap-app"
-    },      
+    }      
 ]
 
-db.Project
+db.project
     .remove({})
     .then(() => db.project.collection.insertMany(projectSeed))
     .then(data => {
